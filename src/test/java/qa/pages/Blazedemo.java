@@ -25,7 +25,7 @@ public class Blazedemo {
 	@FindBy(id = "zipCode")
 	WebElement zipCodeField;
 
-	@FindBy(xpath = "//select/option[@value]")
+	@FindBy(id = "cardType")
 	List<WebElement> selectCardType;
 
 	@FindBy(id = "creditCardNumber")
