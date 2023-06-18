@@ -1,32 +1,24 @@
 package qa.steps;
 
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import qa.pages.Blazedemo;
-import qa.utils.Constants;
+import qa.utils.Constants1;
+
 public class BlazeDemoPurchase {
 	
 	Blazedemo bDemo;
 
 @Given("User get purchase page {string}")
 public void user_get_purchase_page(String url) throws InterruptedException {
-	WebDriverManager.chromedriver().setup();
-	Constants.driver = new ChromeDriver();
-	Thread.sleep(2000);
-	Constants.driver.manage().window().maximize();
-	Constants.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	Constants.driver.get(url);
-	Thread.sleep(2000);
-	bDemo = new Blazedemo();
-	Actions actions = new Actions(Constants.driver);
+	Constants1.driver.get(url);
+	Thread.sleep(2000);	bDemo = new Blazedemo();
+	Actions actions = new Actions(Constants1.driver);
 	actions.sendKeys(Keys.PAGE_DOWN).build().perform();
 	Thread.sleep(1000);
 }
@@ -93,8 +85,5 @@ public void user_clicks_submit_button() {
 
 @Then("User verifies confirmation message {string}")
 public void user_verifies_confirmation_message(String confirmationMessage) throws InterruptedException {
-	bDemo.confirmationText(confirmationMessage);
-	Thread.sleep(3000);
-	Constants.driver.quit();
-}
+	bDemo.confirmationText(confirmationMessage);}
 }
