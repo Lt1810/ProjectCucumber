@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import qa.utils.Constants;
+import qa.utils.Constants1;
 
 public class Blazedemo {
 	@FindBy(id = "inputName")
@@ -25,7 +25,7 @@ public class Blazedemo {
 	@FindBy(id = "zipCode")
 	WebElement zipCodeField;
 
-	@FindBy(xpath = "//select/option[@value]")
+	@FindBy(id = "cardType")
 	List<WebElement> selectCardType;
 
 	@FindBy(id = "creditCardNumber")
@@ -50,7 +50,7 @@ public class Blazedemo {
 	WebElement confirmationText;
 
 	public Blazedemo() {
-		PageFactory.initElements(Constants.driver, this);
+		PageFactory.initElements(Constants1.driver, this);
 	}
 
 	// methods
