@@ -19,7 +19,7 @@ Feature: purchase the flight submit the form.
     Examples: 
       | firstLast  | Address  | City       | State | ZipCode | CardType         | CardNumber | Month | Year | NameOnCard | confirmationText                   |
       | John Cena  | 123 st   | San diego  | CA    |   12345 | Visa             |  123456789 |    06 | 2023 | John Cena  | Thank you for your purchase today! |
-      | Jane Doe   | 456 rd   | Los Ageles | Az    |   45678 | American Express |  987654321 |    04 | 2025 | Jane Doe   | Thank you for your purchase today! |
-      | Bob Marley | 789 ln   | Temecula   | TX    |   74125 | Diner's Club     |  741258963 |    12 | 2029 | Bob Marley | Thank you for your purchase today! |
-      | Sam Smith  | 987 blvd | Irvine     | FL    |   01236 | American Express |  369852147 |    09 | 2027 | Sam Smith  | Thank you for your purchase today! |
-      | Matt Nixon | 741 st   | San Marcos | GA    |   52364 | Visa             |  753159456 |    01 | 2024 | Matt Nixon | Thank you for your purchase today! |
+      | Jane Doe   | 436 rd   | Los Ageles | Az    |   45678 | American Express |  987654321 |    04 | 2025 | Jane Doe   | Thank you for your purchase today! |
+      | Bob Marley | 784 ln   | Temecula   | TX    |   74125 | Diner's Club     |  741258963 |    12 | 2029 | Bob Marley | Thank you for your purchase today! |
+      | Bob Smith  | 987 blvd | Irvine     | FL    |   56705 | American Express |  369852147 |    09 | 2027 | Bob Smith  | Thank you for your purchase today  |
+      | Matt Nixon | 742 st   | San Marcos | GA    |   52364 | Visa             |  753159456 |    01 | 2024 | Matt Nixon | Thank you for your purchase today! |
